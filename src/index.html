@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script type="module">
+    import { sumArray, createUser, OrderStatus, getOrderStatus } from '../dist/main.js';
+
+    // Використовуйте імпортовані функції
+    console.log(sumArray([1, 2, 3, 4])); // Повинно вивести 10
+    console.log(createUser('Анна', 25, true)); // Повинно вивести { name: 'Анна', age: 25, isActive: true }
+    console.log(getOrderStatus(OrderStatus.Pending)); // Повинно вивести 'Замовлення очікує на обробку'
+</script>
+</body>
+</html>
